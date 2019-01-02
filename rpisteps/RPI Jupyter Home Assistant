@@ -1,0 +1,7 @@
+https://github.com/lroguet/rpi-home-assistant
+
+mkdir -p /home/pi/code/jupyter/homeassistant/configuration
+
+sudo docker run -d --name hass --net=host --restart unless-stopped -v /etc/localtime:/etc/localtime:ro -v /home/pi/code/jupyter/homeassistant/configuration:/config lroguet/rpi-home-assistant:latest
+
+sudo docker exec -it hass bash

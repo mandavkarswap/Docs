@@ -1,0 +1,51 @@
+RPI Behind MTNL or static IP
+
+
+1. Problem Dynamic IP, solved by DDNS service provider No-IP Currently on free plan.
+2. RPI getting Diffrent IP by router because of DHCP
+	Solved by fixing local IP in RPI address what happens when someone is, allready alloted that IP
+	https://www.raspberrypi.org/learning/networking-lessons/rpi-static-ip-address/
+	Network Prefrence->Interface-eth0
+
+	Will have to write a script that will update api my public ip to he script
+	https://www.noip.com/integrate
+
+
+If one is changing tomorrow
+	Possible port forwarding not working, map differet port rather than default one, contact mtnl write to trai get static IP
+		https://www.yougetsignal.com/tools/open-ports/
+	Possible no-ip is being crashed by remote writing, install ip updater on device
+
+Next
+
+1. Open All required ports
+	TCP 8081
+	UDP 8081
+	SSH
+	VNC
+	HA
+	Deluged
+	Mail
+	Pop
+	Pushbullet
+	Etc services
+
+2. Install Wordpress in docker for blog
+3. vhost ability
+4. SSL Google Domains
+https://medium.com/@jeremygale/how-to-set-up-a-free-dynamic-hostname-with-ssl-cert-using-google-domains-58929fdfbb7a
+5. Portfolio site
+6. 
+
+
+this saturday
+Write a script to update my dynamic ip address to no ip
+
+Open respective ports
+map completely new ports, store that mappping to drive
+create pushbullet to monitor that site is up all time
+open
+	SSH
+	VNC
+	HA
+	Deluged
