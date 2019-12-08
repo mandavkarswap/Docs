@@ -1,0 +1,2 @@
+If you are changing default port of ssh on router
+make sure you run sshd on same port on pi too
