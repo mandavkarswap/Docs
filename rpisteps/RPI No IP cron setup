@@ -1,0 +1,5 @@
+Script located on
+https://github.com/mdmower/bash-no-ip-updater
+
+crontab -e
+30 * * * * cd /home/pi/code/no-ip/bash-no-ip-updater; bash noipupdater.sh -c /home/pi/code/no-ip/bash-no-ip-updater/config_sample
