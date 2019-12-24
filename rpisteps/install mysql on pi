@@ -1,0 +1,17 @@
+install mysql on pi
+
+https://pimylifeup.com/raspberry-pi-mysql/
+
+sudo apt-get update
+sudo apt-get install mysql-server
+
+sudo mysql -u root -p
+
+CREATE DATABASE exampledb;
+
+
+CREATE USER 'exampleuser'@'localhost' IDENTIFIED BY 'pimylifeup';
+
+GRANT ALL PRIVILEGES ON exampledb.* TO 'exampleuser'@'localhost';
+
+FLUSH PRIVILEGES;
